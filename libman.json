@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "react@16.8.6",
+      "destination": "wwwroot/lib/react/",
+      "files": [
+        "umd/react.production.min.js",
+        "umd/react.development.js"
+      ]
+    },
+    {
+      "library": "twitter-bootstrap@4.3.1",
+      "destination": "wwwroot/lib/twitter-bootstrap/",
+      "files": [
+        "js/bootstrap.js",
+        "css/bootstrap.css",
+        "css/bootstrap.css.map",
+        "js/bootstrap.js.map"
+      ]
+    },
+    {
+      "library": "jquery@3.4.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "jquery.slim.min.map",
+        "jquery.slim.js",
+        "jquery.slim.min.js"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+﻿@page
+@model ParticipantDatabse.Pages.Investigators.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Investigator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Investigator.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Investigator.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Investigator.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Investigator.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Investigator.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Investigator.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Investigator.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Investigator.Address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Investigator.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

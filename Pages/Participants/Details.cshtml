@@ -1,0 +1,121 @@
+﻿@page
+@model ParticipantDatabse.Pages.Participants.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Participant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.Code)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.DateOfBirth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.DateOfBirth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.ActualDueDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.ActualDueDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.Parents)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.Parents)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.MobilePhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.MobilePhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.AlternativePhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.AlternativePhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.EveningPhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.EveningPhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.AlternateName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.AlternateName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.Recruitment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.Recruitment)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.EthnicityOfChild)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.EthnicityOfChild)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.EthnicityOfMother)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.EthnicityOfMother)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Participant.EthnicityOfFather)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Participant.EthnicityOfFather)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Participant.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
